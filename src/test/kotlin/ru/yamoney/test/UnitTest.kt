@@ -2,11 +2,8 @@ package ru.yamoney.test
 
 import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.Matchers.comparesEqualTo
-import org.junit.Assert.assertThat
-import org.junit.Test
 import org.junit.jupiter.api.Test
 import java.math.BigDecimal
-import kotlin.test.assertEquals
 
 class UnitTest {
 
