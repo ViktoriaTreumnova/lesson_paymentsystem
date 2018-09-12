@@ -15,6 +15,11 @@ class AppTest {
     }
 
     @Test
+    fun transfer() {
+        main(arrayOf("transfer", "Вася", "123", "Вова"))
+    }
+
+    @Test
     fun balance() {
         main(arrayOf("balance", "Вася"))
     }

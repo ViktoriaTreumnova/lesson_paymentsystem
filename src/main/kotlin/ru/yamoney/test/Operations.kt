@@ -21,3 +21,12 @@ data class Payment(
 ) : Operation {
     override fun calculate(oldBalance: BigDecimal): BigDecimal = oldBalance.subtract(sum)
 }
+
+data class Transfer(
+        override val user: String,
+        val sum: BigDecimal,
+        val receivingUser: String
+) : Operation {
+    override fun calculate(oldBalance: BigDecimal): BigDecimal = oldBalance.subtract(sum)
+
+}
