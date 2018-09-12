@@ -1,5 +1,6 @@
 package ru.yamoney.test
 
+import org.hamcrest.MatcherAssert
 import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.Matchers.comparesEqualTo
 import org.junit.jupiter.api.Test
@@ -14,7 +15,7 @@ class UnitTest {
         val initialBalance = BigDecimal("2")
         val newBalance = depositOperation.calculate(initialBalance)
 
-        assertThat ("баланс совпал", newBalance, comparesEqualTo(initialBalance+sum))
+        MatcherAssert.assertThat ("баланс совпал", newBalance, comparesEqualTo(initialBalance+sum))
     }
 
 }
